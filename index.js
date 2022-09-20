@@ -30,7 +30,7 @@ io.on("connection", (socket) => {
 
   //メッセージ着弾時の処理
   socket.on("upload pic", (data) => {
-    console.log(data);
+    console.log("data received from " + data.name);
     // 送信元含む全員に送信
     io.emit("spread pic", data);
   });
