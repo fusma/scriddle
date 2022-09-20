@@ -18,9 +18,9 @@ socket.on("spread pic", (data) => {
 
 //inputformからデータを受け取ってsocketで送信(jquery)
 $("#inputform").submit(() => {
-  console.log("submit");
   const name = $("#name").val();
   const message = $("#message").val();
+  console.log("submit from " + name);
   socket.emit("chat", name + "," + message);
 
   return false;

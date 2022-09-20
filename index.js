@@ -21,11 +21,11 @@ const mime = {
 
 // 接続時の処理
 io.on("connection", (socket) => {
-  console.log("connection");
+  // console.log("connection");
 
   // 切断時の処理
   socket.on("disconnect", () => {
-    console.log("disconnected!");
+    // console.log("disconnected!");
   });
 
   //メッセージ着弾時の処理
